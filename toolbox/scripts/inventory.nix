@@ -1,9 +1,9 @@
 {config, pkgs, lib, ...}:
 
 let
-    bookshelfPath = "${config.users.extraUsers.alex3rd.home}/bookshelf";
+    bookshelfPath = "${config.users.extraUsers.vyorkin.home}/bookshelf";
     bookReaderUsePdftools = true;
-    currentUser = "alex3rd";
+    currentUser = "vyorkin";
     previousUser = "octocat";
     screenshotDateFormat = "%Y-%m-%d-%T";
     dockerStackPsCustomFormat = "{{.Name}}   {{.Image}}   {{.Node}} {{.DesiredState}}   {{.CurrentState}}";

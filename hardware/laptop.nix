@@ -16,6 +16,7 @@
             ${pkgs.systemd}/bin/systemctl try-restart sshuttle.service
         '';
         powertop.enable = true;
+	cpuFreqGovernor = lib.mkDefault "powersave";
     };
     services.tlp.enable = true;
     services.acpid.enable = true;
